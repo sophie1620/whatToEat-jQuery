@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's for Dinner?</title>
+
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <!-- navigation bar -->
+        <nav>
+            <div class="wrapper">
+                <ul class="headerNav"> 
+                    <li class="nav about">
+                        <a href="./about/about.html">About</a>
+                    </li>
+                    <li class="nav restaurants">
+                        Restaurants
+                        <ul class="dropdownContent">
+                            <li class="restaurantList"><a href="./asian-food/asian-food.html">Asian</a></li>
+                            <li class="restaurantList"><a href="./european-food/european-food.html">European</a></li>
+                            <li class="restaurantList"><a href="./north-american-food/north-american-food.html">North American</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <!-- h1 title and purpose of quiz -->
+            <h1 class="animate__animated animate__bounceIn">
+                What's for dinner?
+                <div>
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                </div> 
+            </h1>
+            <p class="instruction">Don't know what to eat for dinner?  Answer the questions to find out what you are <em>truly</em> craving!</p>
+        </div>
+    </header>
+
+    <body>
+        
+        <!-- section -->
+        <div class="wrapper">
+            <form action="dinnerOptions" class="dinnerOptions">
+                <h2>Answer the questions below to find out what you'll be having for dinner tonight!</h2>
+                <div class="questionBox">
+                    <fieldset class="cuisine">
+                        <legend>Choose your cuisine</legend>
+                        
+                        <div class="options">
+                            <div class="responsiveButtons">
+                                <label for="asian">Asian</label>
+                                <input type="radio" name="cuisine" value="asian" id="asian" checked>
+                            </div>
+
+                            <div class="responsiveButtons">
+                                <label for="european">European</label>
+                                <input type="radio" name="cuisine" value="european" id="european">
+                            </div>
+                                
+                            <div class="responsiveButtons">
+                                <label for="northAmerican">North American</label>
+                                <input type="radio" name="cuisine" value="northAmerican" id="northAmerican">
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="cravings">
+                        <legend>Are you craving for something...</legend>
+
+                        <div class="options">
+                            <div class="responsiveButtons">
+                                <label for="spicy">Spicy</label>
+                                <input type="radio" name="taste" value="spicy" id="spicyFlavours" checked>
+                            </div>
+                            
+                            <div class="responsiveButtons">
+                                <label for="richOrCreamy">Rich or creamy</label>
+                                <input type="radio" name="taste" value="richAndCreamy" id="richAndCreamyFlavours">
+                            </div>
+                            
+                            <div class="responsiveButtons">
+                                <label for="light">Light</label>
+                                <input type="radio" name="taste" value="light" id="light">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="price">
+                        <legend>Price point</legend>
+                        
+                        <div class="options">
+                            <div class="responsiveButtons">
+                                <label for="affordable">$</label>
+                                <input type="radio" name="price" value="$" id="affordable" checked>
+                            </div>
+
+                            <div class="responsiveButtons">
+                                <label for="average">$$</label>
+                                <input type="radio" name="price" value="$$" id="average">
+                            </div>
+                            
+                            <div class="responsiveButtons">
+                                <label for="affordable">$$$</label>
+                                <input type="radio" name="price" value="$$$" id="expensive">
+                            </div>
+                        </div>
+                        </fieldset>
+                        
+                    <div class="submitButton">
+                        <h3 class="questionsDone"><span class="counter">0</span>/3 questions</h3>
+                        <button class="questionSubmit" type="submit">What's for dinner?</button>
+                        <button type="reset">Do the quiz again!</button>
+                    </div>
+                </div>
+            </form>
+
+            <section class="results">
+                <h2>
+                    Where should you go for dinner?
+                </h2>
+            </section>
+        
+    </body>
+
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <p>Sophie Lai Creations (2021)</p>
+            <p class="juno">Created a <a class="juno" href="https://junocollege.com/">Juno College</a></p>
+        </div>
+    </footer>
+
+    <!-- JS script -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+</body>
+</html>
